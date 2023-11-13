@@ -50,7 +50,7 @@ runs:
     env:
       PYTHONPATH: ${{ github.action_path }}/src
     run: |
-      python -m normalize_needed_jobs_status \
+      python3 -m normalize_needed_jobs_status \
       "$(cat << EOM
         ${{ inputs.allowed-failures }}
       EOM
